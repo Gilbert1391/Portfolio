@@ -503,6 +503,9 @@
 
   &__submit {
     width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 
   &__input-img {
