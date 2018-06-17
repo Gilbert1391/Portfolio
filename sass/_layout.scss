@@ -6,14 +6,14 @@
   &__header {
     padding: 0 $padding-sides;
   }
-
-  &__footer {
-    padding: 2rem $padding-sides;
-  }
 }
 
 @include responsive(tab-port) { //widh < 900px?
   @include base-padding($padding-sides: 4rem);
+}
+
+@include responsive(phone) { //widh < 600px?
+  @include base-padding($padding-sides: 1.5rem);
 }
 
 .container {

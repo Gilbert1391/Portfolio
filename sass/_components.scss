@@ -20,21 +20,35 @@
   @include responsive(phone) { //widh < 600px?
     display: none;
   }
-}
 
-.logo-phone {
-  display: none;
-  width: 100%;
-  font-size: $default-font;
-  color: $color-white;
-  background: $color-red;
-  padding: 1rem 0;
-  text-align: center;
+  &__phone {
+    display: none;
+    width: 100%;
+    font-size: $default-font;
+    color: $color-white;
+    background: $color-red;
+    padding: 1rem 0;
+    text-align: center;
 
-  @include responsive(phone) { //widh < 600px?
-    display: block;
+    @include responsive(phone) { //widh < 600px?
+      display: block;
+    }
   }
 }
+
+// .logo-phone {
+//   display: none;
+//   width: 100%;
+//   font-size: $default-font;
+//   color: $color-white;
+//   background: $color-red;
+//   padding: 1rem 0;
+//   text-align: center;
+//
+//   @include responsive(phone) { //widh < 600px?
+//     display: block;
+//   }
+// }
 
 .user-nav {
   display: flex;
@@ -150,7 +164,7 @@
   }
 }
 
-.section-title {
+.section-header {
   padding: 2rem 0;
   text-align: center;
   background: linear-gradient(62deg,$color-light-red,$color-dark-red);
