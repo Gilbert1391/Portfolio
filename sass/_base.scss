@@ -41,6 +41,7 @@ $color-dark-gray: #393e46;
 // MEDIA QUERY MANAGER
 /*
 0-600px        phone
+600-700px      phone-land
 600-900px      table portrait
 900-1200px     table landscape
 {1200-1800px}  is where normal styles apply
@@ -58,6 +59,10 @@ big-desktop
 @mixin responsive($breakpoint) {
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {@content};  // 600px (600/16 = 37.5)
+  }
+
+  @if $breakpoint == phone-land {
+    @media only screen and (max-width: 43.75em) {@content};  // 700px
   }
 
   @if $breakpoint == tab-port {

@@ -36,20 +36,6 @@
   }
 }
 
-// .logo-phone {
-//   display: none;
-//   width: 100%;
-//   font-size: $default-font;
-//   color: $color-white;
-//   background: $color-red;
-//   padding: 1rem 0;
-//   text-align: center;
-//
-//   @include responsive(phone) { //widh < 600px?
-//     display: block;
-//   }
-// }
-
 .user-nav {
   display: flex;
   font-size: $default-font;
@@ -93,8 +79,8 @@
   background-position: center bottom;
   position: relative;
 
-  @include responsive(big-desktop) { //widh < 1800px?
-    height: 200vh;
+  @include responsive(big-desktop) { //widh => 1800px?
+    height: 120vh;
   }
 
   @include responsive(tab-land) { //widh < 1200px?
@@ -103,6 +89,10 @@
 
   @include responsive(tab-port) { //widh < 900px?
     height: 50vh;
+  }
+
+  @include responsive(phone-land) { //widh 600 - 700px?
+    height: 85vh;
   }
 
   @include responsive(phone) { //widh < 600px?
