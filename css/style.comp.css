@@ -7,6 +7,7 @@
 
 /*
 0-600px        phone
+600-740px      phone-land
 600-900px      table portrait
 900-1200px     table landscape
 {1200-1800px}  is where normal styles apply
@@ -42,7 +43,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: #404040;
-  background-color: #f4f5f6; }
+  background-color: #fcfcfc; }
 
 .container {
   max-width: 120rem;
@@ -50,8 +51,6 @@ body {
   padding: 4rem 6rem; }
   .container__header {
     padding: 0 6rem; }
-  .container__footer {
-    padding: 2rem 6rem; }
 
 @media only screen and (max-width: 56.25em) {
   .container {
@@ -60,6 +59,14 @@ body {
       padding: 0 4rem; }
     .container__footer {
       padding: 2rem 4rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .container {
+    padding: 4rem 1.5rem; }
+    .container__header {
+      padding: 0 1.5rem; }
+    .container__footer {
+      padding: 2rem 1.5rem; } }
 
 @media only screen and (max-width: 37.5em) {
   .container {
@@ -101,24 +108,14 @@ body {
   line-height: 1.8; }
 
 .logo {
-  align-self: center;
-  color: #D8364C;
-  font-weight: 600; }
+  display: flex;
+  align-items: center; }
+  .logo__img {
+    width: 5.5rem;
+    height: 5.5rem; }
   @media only screen and (max-width: 37.5em) {
     .logo {
       display: none; } }
-
-.logo-phone {
-  display: none;
-  width: 100%;
-  font-size: 1.5rem;
-  color: #fff;
-  background: #D8364C;
-  padding: 1rem 0;
-  text-align: center; }
-  @media only screen and (max-width: 37.5em) {
-    .logo-phone {
-      display: block; } }
 
 .user-nav {
   display: flex;
@@ -156,13 +153,16 @@ body {
   position: relative; }
   @media only screen and (min-width: 112.5em) {
     .hero {
-      height: 200vh; } }
+      height: 120vh; } }
   @media only screen and (max-width: 75em) {
     .hero {
       height: 90vh; } }
   @media only screen and (max-width: 56.25em) {
     .hero {
       height: 50vh; } }
+  @media only screen and (max-width: 46.25em) {
+    .hero {
+      height: 90vh; } }
   @media only screen and (max-width: 37.5em) {
     .hero {
       height: 40vh;
@@ -208,25 +208,25 @@ body {
   .btn:hover {
     background-color: #BD032B; }
 
-.section-title {
+.section-header {
   padding: 2rem 0;
   text-align: center;
   background: linear-gradient(62deg, #fc5d76, #BD032B); }
   @media only screen and (max-width: 37.5em) {
-    .section-title {
+    .section-header {
       padding: 1rem; } }
-  .section-title__heading {
+  .section-header__heading {
     font-size: 5.5rem;
     color: #fff; }
     @media only screen and (max-width: 37.5em) {
-      .section-title__heading {
+      .section-header__heading {
         font-size: 2.5rem; } }
-  .section-title__paragraph {
+  .section-header__paragraph {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     color: rgba(255, 255, 255, 0.8); }
     @media only screen and (max-width: 37.5em) {
-      .section-title__paragraph {
+      .section-header__paragraph {
         font-size: 1.8rem;
         margin-bottom: 0; } }
 
@@ -356,9 +356,7 @@ body {
   .card__img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: left;
-    /* To crop from the bottom */ }
+    object-fit: cover; }
   .card__description {
     padding: 2rem;
     height: 40%;
@@ -459,20 +457,31 @@ body {
     .form__input:focus {
       background: #fccfd5; }
   .form .expand {
+    width: 100%;
+    height: 0;
     display: flex;
     background: #04c986;
     color: #157051;
     padding: 1rem 0;
-    width: 100%;
     font-size: 1.3rem;
-    position: relative; }
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 250ms ease-out; }
     .form .expand, .form .expand p {
       margin: 0 auto; }
     .form .expand, .form .expand span {
       margin-right: 1rem;
       cursor: pointer; }
+  .form .show-expand {
+    height: 4.2rem;
+    opacity: 1;
+    visibility: visible; }
   .form__submit {
-    width: 100%; }
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
   .form__input-img {
     height: 2rem;
     position: absolute;

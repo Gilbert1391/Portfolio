@@ -13,26 +13,17 @@
 //////////////////
 
 .logo {
-  align-self: center;
-  color: $color-red;
-  font-weight: 600;
+  display: flex;
+  align-items: center;
+
+  &__img {
+    width: 5.5rem;
+    height: 5.5rem;
+
+  }
 
   @include responsive(phone) { //widh < 600px?
     display: none;
-  }
-
-  &__phone {
-    display: none;
-    width: 100%;
-    font-size: $default-font;
-    color: $color-white;
-    background: $color-red;
-    padding: 1rem 0;
-    text-align: center;
-
-    @include responsive(phone) { //widh < 600px?
-      display: block;
-    }
   }
 }
 
@@ -91,8 +82,8 @@
     height: 50vh;
   }
 
-  @include responsive(phone-land) { //widh 600 - 700px?
-    height: 85vh;
+  @include responsive(phone-land) { //widh 600 - 740px
+    height: 90vh;
   }
 
   @include responsive(phone) { //widh < 600px?
@@ -344,9 +335,9 @@
 
   &__img {
     width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: left; /* To crop from the bottom */
+	  height: 100%;
+	  object-fit: cover;
+	// object-position: left; /* To crop from the bottom */
   }
 
   &__description {
@@ -489,13 +480,17 @@
   }
 
   .expand {
+    width: 100%;
+    height: 0;
     display: flex;
     background: #04c986;
     color: #157051;
     padding: 1rem 0;
-    width: 100%;
     font-size: 1.3rem;
     position: relative;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 250ms ease-out;
 
     &,p {margin: 0 auto;}
 
@@ -503,6 +498,12 @@
       margin-right: 1rem;
       cursor: pointer;
     }
+  }
+
+  .show-expand {
+    height: 4.2rem;
+    opacity: 1;
+    visibility: visible;
   }
 
   &__submit {
