@@ -327,17 +327,12 @@
     height: 60%;
     width: 100%;
     cursor: pointer;
-
-    @include responsive(phone) { //widh < 600px?
-      height: 70%
-    }
   }
 
   &__img {
     width: 100%;
 	  height: 100%;
 	  object-fit: cover;
-	// object-position: left; /* To crop from the bottom */
   }
 
   &__description {
@@ -345,10 +340,7 @@
     height: 40%;
     text-align: center;
     background-color: $color-white;
-
-    @include responsive(phone) { //widh < 600px?
-      height: 30%
-    }
+    position: relative;
   }
 
   &__heading {
@@ -368,10 +360,24 @@
 
   &__text {
     font-size: $default-font;
-    margin-top: 1rem;
+    line-height: 1.4;
 
     @include responsive(phone) { //widh < 600px?
       margin-top: 0;
+    }
+  }
+
+  &__github {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: $color-font;
+    transition: color 250ms ease-out;
+    position: absolute;
+    bottom: 1rem;
+    transform: translateX(-50%);
+
+    &:hover {
+      color: $color-light-red;
     }
   }
 }
@@ -422,8 +428,7 @@
 .form-side {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding-bottom: 7.5rem;
+  padding-top: 1rem;
   width: 55%;
 
   @include responsive(phone) { //widh < 600px?
@@ -441,6 +446,7 @@
     display: flex;
     align-items: center;
     color: $color-white;
+    margin-bottom: 4rem;
   }
 
   &__span {

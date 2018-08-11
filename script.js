@@ -66,13 +66,14 @@ document.querySelector('#cta').addEventListener('click', function() {
 
 // Submit form
 document.querySelector('.form__submit').addEventListener('click', function() {
-  var formInputs = document.querySelector('.form__input');
+  var formInputs = document.querySelectorAll('.form__input');
 
-  if (formInputs.value === '' && formInputs.hasAttribute('required')) {
-    return;
-  } else {
-    document.querySelector('.expand').classList.add('show-expand');
+  for(var i = 0; i < formInputs.length; i++) {
+    if (formInputs[i].value === '' && formInputs[i].hasAttribute('required')) {
+      return false;
+    }
   }
+  document.querySelector('.expand').classList.add('show-expand');
 });
 
 document.querySelector('.close-btn').addEventListener('click', function() {
