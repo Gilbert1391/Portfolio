@@ -19,10 +19,10 @@
   &__img {
     width: 5.5rem;
     height: 5.5rem;
-
   }
 
-  @include responsive(phone) { //widh < 600px?
+  @include responsive(phone) {
+    //widh < 600px?
     display: none;
   }
 }
@@ -31,7 +31,8 @@
   display: flex;
   font-size: $default-font;
 
-  @include responsive(phone) { //widh < 600px?
+  @include responsive(phone) {
+    //widh < 600px?
     width: 100%;
     justify-content: space-between;
   }
@@ -45,7 +46,8 @@
     text-decoration: none;
     transition: all 400ms;
 
-    &:link, &:visited {
+    &:link,
+    &:visited {
       color: $color-light-gray;
     }
 
@@ -53,7 +55,8 @@
       color: $color-white;
       background: $color-red;
     }
-    @include responsive(phone) { //widh < 600px?
+    @include responsive(phone) {
+      //widh < 600px?
       padding: 1rem;
     }
   }
@@ -70,23 +73,28 @@
   background-position: center bottom;
   position: relative;
 
-  @include responsive(big-desktop) { //widh => 1800px?
+  @include responsive(big-desktop) {
+    //widh => 1800px?
     height: 120vh;
   }
 
-  @include responsive(tab-land) { //widh < 1200px?
+  @include responsive(tab-land) {
+    //widh < 1200px?
     height: 90vh;
   }
 
-  @include responsive(tab-port) { //widh < 900px?
+  @include responsive(tab-port) {
+    //widh < 900px?
     height: 50vh;
   }
 
-  @include responsive(phone-land) { //widh 600 - 740px
+  @include responsive(phone-land) {
+    //widh 600 - 740px
     height: 90vh;
   }
 
-  @include responsive(phone) { //widh < 600px?
+  @include responsive(phone) {
+    //widh < 600px?
     height: 40vh;
     background-position: center;
   }
@@ -111,7 +119,8 @@
     margin-bottom: 4rem;
     color: #222;
 
-    @include responsive(phone) { //widh < 600px?
+    @include responsive(phone) {
+      //widh < 600px?
       font-size: 3rem;
       margin-bottom: 2rem;
     }
@@ -136,7 +145,8 @@
   background-color: $color-red;
   transition: all 400ms;
 
-  @include responsive(phone) { //widh < 600px?
+  @include responsive(phone) {
+    //widh < 600px?
     padding: 1rem;
   }
 
@@ -148,9 +158,10 @@
 .section-header {
   padding: 2rem 0;
   text-align: center;
-  background: linear-gradient(62deg,$color-light-red,$color-dark-red);
+  background: linear-gradient(62deg, $color-light-red, $color-dark-red);
 
-  @include responsive(phone) { //widh < 600px?
+  @include responsive(phone) {
+    //widh < 600px?
     padding: 1rem;
   }
 
@@ -158,7 +169,8 @@
     font-size: 5.5rem;
     color: $color-white;
 
-    @include responsive(phone) { //widh < 600px?
+    @include responsive(phone) {
+      //widh < 600px?
       font-size: 2.5rem;
     }
   }
@@ -168,7 +180,8 @@
     margin-bottom: 2rem;
     color: $color-light-gray;
 
-    @include responsive(phone) { //widh < 600px?
+    @include responsive(phone) {
+      //widh < 600px?
       font-size: 1.8rem;
       margin-bottom: 0;
     }
@@ -178,11 +191,13 @@
 .about-wrapper {
   display: flex;
 
-  @include responsive(tab-port) { //widh < 900px?
+  @include responsive(tab-port) {
+    //widh < 900px?
     justify-content: space-between;
   }
 
-  @include responsive(phone) { //widh < 600px?
+  @include responsive(phone) {
+    //widh < 600px?
     flex-wrap: wrap;
   }
 }
@@ -192,20 +207,22 @@
   text-align: center;
   margin: 0 2rem;
 
-  @include responsive(tab-port) { //widh < 900px?
+  @include responsive(tab-port) {
+    //widh < 900px?
     width: 25%;
     margin: 0;
   }
 
-  @include responsive(phone) { //widh < 600px?
+  @include responsive(phone) {
+    //widh < 600px?
     width: 80%;
     margin: 1rem auto;
   }
 
   &__icon-container {
     width: 10rem;
-	  height: 10rem;
-	  border-radius: 50%;
+    height: 10rem;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,12 +230,14 @@
     background: $color-light-red;
     margin-bottom: 1rem;
 
-    @include responsive(tab-port) { //widh < 900px?
+    @include responsive(tab-port) {
+      //widh < 900px?
       width: 8rem;
       height: 8rem;
     }
 
-    @include responsive(phone) { //widh < 600px?
+    @include responsive(phone) {
+      //widh < 600px?
       width: 7rem;
       height: 7rem;
     }
@@ -233,7 +252,8 @@
   width: 100%;
   margin-top: 6rem;
 
-  @include responsive(phone) { //widh < 600px?
+  @include responsive(phone) {
+    //widh < 600px?
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,13 +271,15 @@
     clip-path: circle(50% at 50% 50%);
     margin-right: 2rem;
 
-    @include responsive(tab-port) { //widh < 900px?
+    @include responsive(tab-port) {
+      //widh < 900px?
       width: 18rem;
       height: 18rem;
       margin: 0 auto;
     }
 
-    @include responsive(phone) { //widh < 600px?
+    @include responsive(phone) {
+      //widh < 600px?
       width: 15rem;
       height: 15rem;
       shape-outside: none;
@@ -273,8 +295,11 @@
   &__description {
     margin-top: 1rem;
 
-    @include responsive(phone) { //widh < 600px?
-      & > :first-child {text-align: center;}
+    @include responsive(phone) {
+      //widh < 600px?
+      & > :first-child {
+        text-align: center;
+      }
     }
   }
 }
@@ -286,7 +311,8 @@
   margin: 2rem 0 0 1rem;
   color: $color-red;
 
-  @include responsive(phone) { //widh < 600px?
+  @include responsive(phone) {
+    //widh < 600px?
     font-size: 1.5rem;
     display: flex;
     flex-wrap: wrap;
@@ -312,13 +338,15 @@
   border-bottom-right-radius: $borders;
   border-bottom-left-radius: $borders;
   border: 1px solid $color-gray;
-  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 
-  @include responsive(tab-port) { //widh < 900px?
+  @include responsive(tab-port) {
+    //widh < 900px?
     width: calc(100% / 2 - 2rem);
   }
 
-  @include responsive(phone) { //widh < 600px?
+  @include responsive(phone) {
+    //widh < 600px?
     width: 95%;
     margin: 1rem auto;
   }
@@ -331,8 +359,8 @@
 
   &__img {
     width: 100%;
-	  height: 100%;
-	  object-fit: cover;
+    height: 100%;
+    object-fit: cover;
   }
 
   &__description {
@@ -359,10 +387,11 @@
   }
 
   &__text {
-    font-size: $default-font;
+    font-size: 1.4rem;
     line-height: 1.4;
 
-    @include responsive(phone) { //widh < 600px?
+    @include responsive(phone) {
+      //widh < 600px?
       margin-top: 0;
     }
   }
@@ -370,7 +399,7 @@
   &__github {
     font-size: 1.8rem;
     text-decoration: none;
-    color: $color-font;
+    color: #999999;
     transition: color 250ms ease-out;
     position: absolute;
     bottom: 1rem;
@@ -386,7 +415,8 @@
   width: calc(100% / 3 - 2rem);
   margin: 0 auto;
 
-  @include responsive(phone) { //widh < 600px?
+  @include responsive(phone) {
+    //widh < 600px?
     width: 80%;
     margin: 1rem auto;
     text-align: center;
@@ -420,7 +450,8 @@
   border-radius: $borders;
   background: linear-gradient(90deg, $color-red 54.3%, $color-dark-gray 50%);
 
-  @include responsive(phone) { //widh < 600px?
+  @include responsive(phone) {
+    //widh < 600px?
     background: $color-dark-gray;
   }
 }
@@ -431,7 +462,8 @@
   padding-top: 1rem;
   width: 55%;
 
-  @include responsive(phone) { //widh < 600px?
+  @include responsive(phone) {
+    //widh < 600px?
     display: none;
   }
 
@@ -459,14 +491,15 @@
   width: 45%;
   padding-left: 3rem;
 
-  @include responsive(phone) { //widh < 600px?
+  @include responsive(phone) {
+    //widh < 600px?
     width: 100%;
     padding: 0;
   }
 
   &__group {
     padding: 1rem 0;
-    position:relative;
+    position: relative;
   }
 
   &__input {
@@ -498,9 +531,13 @@
     visibility: hidden;
     transition: all 250ms ease-out;
 
-    &,p {margin: 0 auto;}
+    &,
+    p {
+      margin: 0 auto;
+    }
 
-    &,span{
+    &,
+    span {
       margin-right: 1rem;
       cursor: pointer;
     }
