@@ -1,4 +1,6 @@
-data = [
+"use strict";
+
+var data = [
   {
     url: "http://fifteen-app.herokuapp.com/",
     gitHubUrl: "https://github.com/Gilbert1391/fifteen-webapp",
@@ -33,28 +35,26 @@ data = [
   }
 ];
 
-const grid = document.querySelector(".flex-grid");
+var flexGrid = document.querySelector(".flex-grid");
 
-data.forEach(
-  el =>
-    (grid.innerHTML += `<article class="card">
-<div class="card__thumbnail">
-  <a href=${el.url} target="_blank">
-    <img src=${el.img} alt=${el.title} class="card__img">
-  </a>
-</div>
-<div class="card__description">
-  <h3 class="card__heading">
-    <a href=${el.url} target="_blank" class="card__link">${el.title}</a>
-  </h3>
-  <p class="card__text">${el.desc}</p>
-  <a href=${el.gitHubUrl} target="_blank" class="card__github">
-    GitHub
-    <i class="fab fa-github"></i>
-  </a>
-</div>
-</article>`)
-);
+data.forEach(function(el) {
+  return (flexGrid.innerHTML +=
+    '<article class="card">\n<div class="card__thumbnail">\n  <a href=' +
+    el.url +
+    ' target="_blank">\n    <img src=' +
+    el.img +
+    " alt=" +
+    el.title +
+    ' class="card__img">\n  </a>\n</div>\n<div class="card__description">\n  <h3 class="card__heading">\n    <a href=' +
+    el.url +
+    ' target="_blank" class="card__link">' +
+    el.title +
+    '</a>\n  </h3>\n  <p class="card__text">' +
+    el.desc +
+    "</p>\n  <a href=" +
+    el.gitHubUrl +
+    ' target="_blank" class="card__github">\n    GitHub\n    <i class="fab fa-github"></i>\n  </a>\n</div>\n</article>');
+});
 
 // Browser support
 function currentYPosition() {
