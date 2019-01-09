@@ -1,3 +1,61 @@
+data = [
+  {
+    url: "http://fifteen-app.herokuapp.com/",
+    gitHubUrl: "https://github.com/Gilbert1391/fifteen-webapp",
+    img: "img/fifteen-ss.png",
+    title: "Fifteen",
+    desc:
+      "Web app built with the MERN stack. Add /admin to the url and login as admin to modify the data by sending HTTP requests to the server, contact me for the admin credentials. Check repo for all details."
+  },
+  {
+    url: "https://dashboardbox.netlify.com/",
+    gitHubUrl: "https://github.com/Gilbert1391/dashboardbox",
+    img: "img/dashboard-box.png",
+    title: "Dashboard Box",
+    desc:
+      "Single Page Application (SPA) implemented with React, I used the movie database API to fetch dynamic data to the app. Check repo on GitHub for more information."
+  },
+  {
+    url: "https://gilbert1391.github.io/Bryant-Hill/",
+    gitHubUrl: "https://github.com/Gilbert1391/Bryant-Hill",
+    img: "img/bryant-ss.png",
+    title: "Bryant Hill",
+    desc:
+      "I built this website with thinking about real estate, it has galleries and individual listing pages. I integrated some vanilla JavaScript functionalities."
+  },
+  {
+    url: "https://gilbert1391.github.io/Natours/",
+    gitHubUrl: "https://github.com/Gilbert1391/Natours/",
+    img: "img/natour-ss.png",
+    title: "Natours",
+    desc:
+      "Created as part of my Advance CSS and Sass course by Jonas Schmedtmann, This web page has a wide variety of CSS animations."
+  }
+];
+
+const grid = document.querySelector(".flex-grid");
+
+data.forEach(
+  el =>
+    (grid.innerHTML += `<article class="card">
+<div class="card__thumbnail">
+  <a href=${el.url} target="_blank">
+    <img src=${el.img} alt=${el.title} class="card__img">
+  </a>
+</div>
+<div class="card__description">
+  <h3 class="card__heading">
+    <a href=${el.url} target="_blank" class="card__link">${el.title}</a>
+  </h3>
+  <p class="card__text">${el.desc}</p>
+  <a href=${el.gitHubUrl} target="_blank" class="card__github">
+    GitHub
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+</article>`)
+);
+
 // Browser support
 function currentYPosition() {
   // Firefox, Chrome, Opera, Safari
