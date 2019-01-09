@@ -2,7 +2,7 @@
 
 var data = [
   {
-    url: "http://fifteen-app.herokuapp.com/",
+    url: "https://fifteen-app.herokuapp.com/",
     gitHubUrl: "https://github.com/Gilbert1391/fifteen-webapp",
     img: "img/fifteen-ss.png",
     title: "Fifteen",
