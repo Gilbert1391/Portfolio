@@ -31,7 +31,7 @@ var data = [
     img: "img/natour-ss.png",
     title: "Natours",
     desc:
-      "Created as part of my Advance CSS and Sass course by Jonas Schmedtmann, This web page has a wide variety of CSS animations."
+      "Created as part of my Advanced CSS and Sass course by Jonas Schmedtmann, this web page has a wide variety of CSS animations."
   }
 ];
 
