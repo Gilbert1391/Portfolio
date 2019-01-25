@@ -7,7 +7,7 @@ var data = [
     img: "img/fifteen-ss.png",
     title: "Fifteen",
     desc:
-      "Web app built with the MERN stack. Add /admin to the URL and login as admin to modify the data by sending HTTP requests to the server, contact me for the admin credentials. Check repo for all details."
+      "Web app built with the MERN stack. Add /admin to the URL and login as admin to modify the data by sending HTTP requests to the server, contact me for the admin credentials."
   },
   {
     url: "https://dashboardbox.netlify.com/",
@@ -23,7 +23,7 @@ var data = [
     img: "img/bryant-ss.png",
     title: "Bryant Hill",
     desc:
-      "I built this website with thinking about real estate, it has galleries and individual listing pages. I integrated some vanilla JavaScript functionalities."
+      "I built this website thinking about real estate, it has galleries and individual listing pages. I integrated some vanilla JavaScript functionalities."
   },
   {
     url: "https://gilbert1391.github.io/Natours/",
