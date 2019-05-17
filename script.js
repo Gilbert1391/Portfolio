@@ -7,7 +7,7 @@ var data = [
     img: "img/fifteen-ss.png",
     title: "Fifteen",
     desc:
-      "Web app built with the MERN stack. Add /admin to the URL and login as admin to modify the data by sending HTTP requests to the server, contact me for the admin credentials."
+      "Web app built with the MERN stack. Add /admin to the URL and login as admin to modify the data by sending HTTP requests to the server. Credentials:<br> <b>username:</b> admin, <b>password:</b> my_password"
   },
   {
     url: "https://dashboardbox.netlify.com/",

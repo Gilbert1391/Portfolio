@@ -304,7 +304,7 @@
 }
 
 .skills {
-  width: 70%;
+  width: 66%;
   display: inline-block;
   font-size: 1.8rem;
   font-weight: 600;
@@ -313,7 +313,7 @@
 
   @include responsive(tab-port) {
     //widh < 900px?
-    width: 100%;
+    width: 94%;
   }
 
   @include responsive(phone) {
