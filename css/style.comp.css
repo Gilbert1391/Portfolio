@@ -373,7 +373,7 @@ body {
     text-decoration: none;
     color: #404040; }
   .card__text {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1.4; }
     @media only screen and (max-width: 37.5em) {
       .card__text {
