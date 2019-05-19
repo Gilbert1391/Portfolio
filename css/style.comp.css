@@ -294,8 +294,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .profile__shape {
         width: 18rem;
-        height: 18rem;
-        margin: 0 auto; } }
+        height: 18rem; } }
     @media only screen and (max-width: 37.5em) {
       .profile__shape {
         width: 15rem;
@@ -312,11 +311,15 @@ body {
         text-align: center; } }
 
 .skills {
+  width: 66%;
   display: inline-block;
   font-size: 1.8rem;
   font-weight: 600;
   margin: 2rem 0 0 1rem;
   color: #D8364C; }
+  @media only screen and (max-width: 56.25em) {
+    .skills {
+      width: 94%; } }
   @media only screen and (max-width: 37.5em) {
     .skills {
       font-size: 1.5rem;
@@ -355,7 +358,7 @@ body {
     height: 100%;
     object-fit: cover; }
   .card__description {
-    padding: 2rem;
+    padding: 1rem;
     height: 40%;
     text-align: center;
     background-color: #fff;
@@ -370,7 +373,7 @@ body {
     text-decoration: none;
     color: #404040; }
   .card__text {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.4; }
     @media only screen and (max-width: 37.5em) {
       .card__text {
@@ -378,7 +381,7 @@ body {
   .card__github {
     font-size: 1.8rem;
     text-decoration: none;
-    color: #404040;
+    color: #999999;
     transition: color 250ms ease-out;
     position: absolute;
     bottom: 1rem;
@@ -473,9 +476,11 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 250ms ease-out; }
-    .form .expand, .form .expand p {
+    .form .expand,
+    .form .expand p {
       margin: 0 auto; }
-    .form .expand, .form .expand span {
+    .form .expand,
+    .form .expand span {
       margin-right: 1rem;
       cursor: pointer; }
   .form .show-expand {
