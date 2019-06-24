@@ -39,7 +39,7 @@ var flexGrid = document.querySelector(".flex-grid");
 
 data.forEach(function(el) {
   return (flexGrid.innerHTML +=
-    '<article class="card">\n<div class="card__thumbnail">\n  <a href=' +
+    '<article class="card">\n<div class="card__thumbnail">\n  <a class="card__img-container" href=' +
     el.url +
     ' target="_blank">\n    <img src=' +
     el.img +

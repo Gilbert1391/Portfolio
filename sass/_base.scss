@@ -3,22 +3,24 @@
   padding: 0;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 // VARIABLES
 $borders: 6px;
-$default-font: 1.5rem;
+$default-font: 1.6rem;
 $padding-sides: 6rem;
 $color-font: #404040;
-$color-blue: #26AFEB;
-$color-red: #D8364C;
+$color-blue: #26afeb;
+$color-red: #d8364c;
 $color-light-red: #fc5d76;
-$color-dark-red: #BD032B;
+$color-dark-red: #bd032b;
 $color-white: #fff;
 $color-gray: #d0d0d0;
-$color-light-gray: hsla(0,0%,100%,.8);
+$color-light-gray: hsla(0, 0%, 100%, 0.8);
 $color-dark-gray: #393e46;
 // $color-light-gray: #F2F2F2;
 // #a1a7b9
@@ -58,23 +60,33 @@ big-desktop
 
 @mixin responsive($breakpoint) {
   @if $breakpoint == phone {
-    @media only screen and (max-width: 37.5em) {@content};  // 600px (600/16 = 37.5)
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } // 600px (600/16 = 37.5)
   }
 
   @if $breakpoint == phone-land {
-    @media only screen and (max-width: 46.25em) {@content};  // 740px
+    @media only screen and (max-width: 46.25em) {
+      @content;
+    } // 740px
   }
 
   @if $breakpoint == tab-port {
-    @media only screen and (max-width: 56.25em) {@content};  // 900px
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } // 900px
   }
 
   @if $breakpoint == tab-land {
-    @media only screen and (max-width: 75em) {@content};  // 1200px
+    @media only screen and (max-width: 75em) {
+      @content;
+    } // 1200px
   }
 
   @if $breakpoint == big-desktop {
-    @media only screen and (min-width: 112.5em) {@content}; //1800px
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800px
   }
 }
 
@@ -83,25 +95,29 @@ html {
   font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5% (16px is the default font size)
   -webkit-font-smoothing: antialiased;
 
-  @include responsive(tab-land) { //widh < 1200px?
+  @include responsive(tab-land) {
+    //widh < 1200px?
     font-size: 56.25%; //1rem = 9px, 9/16 = 56.25
   }
 
-  @include responsive(tab-port) { //widh < 900px?
+  @include responsive(tab-port) {
+    //widh < 900px?
     font-size: 50%; //1rem = 8px, 8/16= 50
   }
 
-  @include responsive(phone) { //widh < 600px?
+  @include responsive(phone) {
+    //widh < 600px?
     font-size: 50%; //1rem = 6px, 6/16= 38
   }
 
-  @include responsive(big-desktop) { //widh => 1800px?
+  @include responsive(big-desktop) {
+    //widh => 1800px?
     font-size: 75%; //1rem = 12px, 75
   }
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: $color-font;
