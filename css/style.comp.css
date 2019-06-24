@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0; }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit; }
 
 /*
@@ -39,7 +41,7 @@ html {
       font-size: 75%; } }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: #404040;
@@ -104,7 +106,7 @@ body {
   margin-bottom: 1rem; }
 
 .paragraph {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.8; }
 
 .logo {
@@ -119,7 +121,7 @@ body {
 
 .user-nav {
   display: flex;
-  font-size: 1.5rem; }
+  font-size: 1.6rem; }
   @media only screen and (max-width: 37.5em) {
     .user-nav {
       width: 100%;
@@ -136,7 +138,7 @@ body {
       color: rgba(255, 255, 255, 0.8); }
     .user-nav__link:hover {
       color: #fff;
-      background: #D8364C; }
+      background: #d8364c; }
     @media only screen and (max-width: 37.5em) {
       .user-nav__link {
         padding: 1rem; } }
@@ -187,10 +189,10 @@ body {
         font-size: 3rem;
         margin-bottom: 2rem; } }
     .hero__heading--name {
-      color: #D8364C; }
+      color: #d8364c; }
 
 .btn {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
@@ -200,18 +202,18 @@ body {
   outline: none;
   cursor: pointer;
   color: #fff;
-  background-color: #D8364C;
+  background-color: #d8364c;
   transition: all 400ms; }
   @media only screen and (max-width: 37.5em) {
     .btn {
       padding: 1rem; } }
   .btn:hover {
-    background-color: #BD032B; }
+    background-color: #bd032b; }
 
 .section-header {
   padding: 2rem 0;
   text-align: center;
-  background: linear-gradient(62deg, #fc5d76, #BD032B); }
+  background: linear-gradient(62deg, #fc5d76, #bd032b); }
   @media only screen and (max-width: 37.5em) {
     .section-header {
       padding: 1rem; } }
@@ -316,7 +318,7 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 2rem 0 0 1rem;
-  color: #D8364C; }
+  color: #d8364c; }
   @media only screen and (max-width: 56.25em) {
     .skills {
       width: 94%; } }
@@ -335,7 +337,7 @@ body {
 
 .card {
   width: calc(100% / 3 - 2rem);
-  height: 41rem;
+  height: 43rem;
   margin: 1rem;
   overflow: hidden;
   border-bottom-right-radius: 6px;
@@ -350,16 +352,19 @@ body {
       width: 95%;
       margin: 1rem auto; } }
   .card__thumbnail {
-    height: 60%;
+    height: 58%;
     width: 100%;
     cursor: pointer; }
+  .card__img-container {
+    display: block;
+    height: 100%; }
   .card__img {
     width: 100%;
     height: 100%;
     object-fit: cover; }
   .card__description {
     padding: 1rem;
-    height: 40%;
+    height: 42%;
     text-align: center;
     background-color: #fff;
     position: relative; }
@@ -373,7 +378,7 @@ body {
     text-decoration: none;
     color: #404040; }
   .card__text {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 1.4; }
     @media only screen and (max-width: 37.5em) {
       .card__text {
@@ -404,18 +409,18 @@ body {
     font-size: 1.8rem;
     margin-bottom: 1rem; }
   .reference__link {
-    color: #26AFEB;
+    color: #26afeb;
     text-decoration: none;
     transition: color 400ms; }
     .reference__link:hover {
-      color: #D8364C; }
+      color: #d8364c; }
 
 .contact-form {
   display: flex;
   width: 75rem;
   padding: 3rem;
   border-radius: 6px;
-  background: linear-gradient(90deg, #D8364C 54.3%, #393e46 50%); }
+  background: linear-gradient(90deg, #d8364c 54.3%, #393e46 50%); }
   @media only screen and (max-width: 37.5em) {
     .contact-form {
       background: #393e46; } }
@@ -439,7 +444,7 @@ body {
     color: #fff;
     margin-bottom: 4rem; }
   .form-side__span {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-left: 1rem; }
 
 .form {
@@ -502,7 +507,7 @@ body {
 
 .footer-nav {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: rgba(255, 255, 255, 0.8); }
   .footer-nav__link {
     text-decoration: none;
@@ -523,15 +528,15 @@ body {
     color: rgba(255, 255, 255, 0.8);
     transition: all 400ms; }
     .social-media__icon:hover {
-      color: #D8364C; }
+      color: #d8364c; }
 
 .copyright {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.8);
   margin: 0 auto; }
   .copyright__name {
-    color: #D8364C;
+    color: #d8364c;
     font-weight: bold; }
 
 .margin-bottom-small {
